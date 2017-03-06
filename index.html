@@ -1,19 +1,26 @@
 <html>
 <title>الله أكبر</title>
-<body>
+<body style="background-color:black;">
 <div id='main'><div>
-الله أكبر!  الله أكبر!
+ <font size="+60">
+الله أكبر !الله أكبر!
+</font>
 </div></div>
 </body>
 <script language='javascript'>
-  var l = {'red','orange','yellow','green','blue','indigo','violet'};
-  var i =0;
-  function run()
+  var l = ['red','orange','goldenrod','yellow','greenyellow','green','blue','indigo','violet','Fuchsia'];
+  run(0);
+	function sleep(ms) 
+	{
+		return new Promise(resolve => setTimeout(resolve, ms*1000));
+	}
+  async function run(i)
   {
-    document.getElementById("main").style.color = l[i%7];
-    i++;
-    run();
+	f = i;
+    document.getElementById("main").style.color = l[f%l.length];
+	await sleep(.1);
+    f++;
+    run(f);
   }
-window.onload=run;
 </script>
 </html>
