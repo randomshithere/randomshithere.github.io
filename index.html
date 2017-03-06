@@ -1,8 +1,19 @@
 <html>
 <title>الله أكبر</title>
 <body>
-<div><div>
+<div id='main'><div>
 الله أكبر!  الله أكبر!
 </div></div>
 </body>
+<script language='javascript'>
+  var l = {'red','orange','yellow','green','blue','indigo','violet'};
+  var i =0;
+  function run()
+  {
+    document.getElementById("myDiv").style.color = l[i%7];
+    i++;
+    run();
+  }
+window.onload=run;
+</script>
 </html>
