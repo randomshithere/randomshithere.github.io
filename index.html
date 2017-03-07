@@ -2,8 +2,8 @@
 <title>الله أكبر</title>
 <body id='body'>
 <div><div>
- <font id='main' size="+60"  style="background-color:white;">
-	 Lmao Boi Welcome to the Website
+<font id='main' size="+60"  style="background-color:white;">
+Lmao Boi Welcome to the Website
 </font>
 </div></div>
 <div><div>
@@ -14,21 +14,21 @@
 </div></div>
 </body>
 <script language='javascript'>
-  document.getElementById('main').style.backgroundColor = 'black';
-  var l = ['red','orange','goldenrod','yellow','greenyellow','green','blue','indigo','violet','Fuchsia'];
-  run(0);
-	function sleep(ms) 
-	{
-		return new Promise(resolve => setTimeout(resolve, ms*1000));
-	}
-  async function run(i)
-  {
-	f = i;
-    document.getElementById("main").style.color = l[f%l.length];
-    document.getElementById("button").style.color = l[f%l.length];
-	await sleep(.1);
-    f++;
-    run(f);
-  }
+document.getElementById('main').style.backgroundColor = 'black';
+var l = ['red','orange','goldenrod','yellow','greenyellow','green','blue','indigo','violet','Fuchsia'];
+run(0);
+function sleep(ms) 
+{
+return new Promise(resolve => setTimeout(resolve, ms*1000));
+}
+async function run(i)
+{
+f = i;
+document.getElementById("main").style.color = l[f%l.length];
+document.getElementById("button").style.color = l[f%l.length];
+await sleep(.1);
+f++;
+run(f);
+}
 </script>
 </html>
