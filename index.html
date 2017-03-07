@@ -26,7 +26,7 @@ async function run(i)
 f = i;
 document.getElementById("main").style.color = l[f%l.length];
 document.getElementById("button").style.color = l[f%l.length];
-await sleep(.1);
+await sleep(.5);
 f++;
 run(f);
 }
