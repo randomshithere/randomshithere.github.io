@@ -8,10 +8,11 @@ Lmao Boi Welcome to the Website
 </div></div>
 <div><div>
 <button type="button" id='button' onclick="alert('I TOLD YOU NOT TO CLICK THE BUTTON, NOW YOU GET NO BUTTON.'),document.getElementById('button').style.visibility = 'hidden', run(0)">Don't press</button>
-</div></div>
+</div></div><div>
 <font style="size:48px">
   John is rly bad at baseball fyi
 </font>
+  </div>
 <div><div>
 <img src='1.gif'>
 </div></div>
@@ -29,7 +30,7 @@ async function run(i)
 f = i;
 document.getElementById("main").style.color = l[f%l.length];
 document.getElementById("button").style.color = l[f%l.length];
-await sleep(.5);
+await sleep(.05);
 f++;
 run(f);
 }
